@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(2, 166, 255, 0);
+  background-image: url(./estaticos/images/brown.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+body .fondo-imagen {
+  opacity: 0.1;
+}
+@media (max-width: 850px) and (min-width: 450px) {
+  body {
+    background-size: auto 100%;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    background-size: auto 100%;
+  }
+}
+
+#root {
+  width: 100vw;
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap')
+$amplitud-mayor: 100vw
+$titulo-formulario: 'Poppins', sans-serif
+$size-large-formulario: 3em
+$size-medium-formulario: 2em
+$size-small-formulario: 1em
+$input-height: 50px
+$input-padding: 10px
+$minimo: 450px
+$maximo: 700px
+$color-letters: #e7e7e7
+$color-entrada: #363636
+*
+    box-sizing: border-box    
+.title
+    background-color: red
+.form-grupo
+    display: flex
+    flex-direction: column
+    align-items: start
+.pantalla
+    display: flex
+    justify-content: space-around
+    width: $amplitud-mayor
+    height: 90vh
+    @media (max-width: 1000px) and (min-width: $minimo)
+        display: block
+    @media (max-width: $minimo)
+        display: block
+.izquierda
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 30%
+    height: 80%
+    color: $color-letters
+    box-shadow: 0 0 8px #525252
+    border-radius: 4px
+    @media (max-width: $maximo) and (min-width: $minimo)
+            height: 75%
+    @media (max-width: $minimo)
+        height: 70%
+    margin-top: 100px
+    margin-left: 30px
+    padding-top: 15px
+    background-color: #1c1c1c96
+    overflow: hidden
+    input
+        padding: $input-padding
+        border-radius: 3px
+        border: none
+        background-color: $color-entrada
+        height: $input-height
+        color: $color-letters
+    textarea
+        color: $color-letters
+        background-color: $color-entrada
+        width: 100%
+        border-radius: 3px
+        resize: none
+        padding: 10px
+        @media (max-width: $maximo) and (min-width: $minimo)
+            width: 160px
+        @media (max-width: $minimo)
+            width: 100px
+    @media (max-width: $minimo)
+        padding-top: 20px
+    h1
+        font-family: $titulo-formulario
+        font-size: $size-large-formulario
+        @media (max-width: $maximo) and (min-width: $minimo)
+            font-size: $size-medium-formulario
+        @media (max-width: $minimo)
+            font-size: $size-small-formulario
+    .form-boton
+        button
+            width: 100%
+            margin-top: 20px
+            background-color: #ff1d1d
+            color: $color-letters
+            border: none
+            border-radius: 3px
+            height: 50px
+            &:active
+                transform: scale(.99)
+                background-color: #a70a0a
+            @media (max-width: $maximo) and (min-width: $minimo)
+                width: 160px
+                font-size: 14px
+            @media (max-width: $minimo)
+                width: 100px
+                font-size: 14px
+    .form-grupo
+        margin-top: 20px
+        input
+            @media (max-width: $maximo) and (min-width: $minimo)
+                width: 160px
+            @media (max-width: $minimo)
+                width: 100px
+.derecha
+    display: flex
+    justify-content: center
+    width: 30%
+    margin-top: 70px
+    @media (max-width: $maximo) and (min-width: $minimo)
+        width: 35%
+    @media (max-width: $minimo)
+        width: 15%

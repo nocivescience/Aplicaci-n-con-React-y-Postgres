@@ -1,0 +1,13 @@
+const express=require('express')
+const app=express()
+const morgan=require('morgan')
+const cors=require('cors')
+app.use(cors())
+app.use(morgan('dev'))
+app.use(express.json())
+app.use(require('./routes/tasks.routes'))
+app.use((req,res,next)=>{
+    return res.json({'message':'Gruesome wrong!!!'})
+})
+app.set('port', process.env.PORT||3000)
+app.listen(app.get('port'),()=>{console.log(`puerto habilitado ${app.get('port')}`)})

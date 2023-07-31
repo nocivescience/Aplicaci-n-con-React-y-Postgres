@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+.image-container {
+  display: flex;
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.5921568627);
+  border-radius: 3px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  color: #fcfcfc;
+  height: 130px;
+  width: 100%;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .image-container {
+    flex-direction: column;
+    height: 300px;
+  }
+}
+@media (max-width: 450px) {
+  .image-container {
+    flex-direction: column;
+    height: 300px;
+  }
+}
+.image-container img {
+  width: 200px;
+  height: 130px;
+}
+.image-container div {
+  padding-left: 20px;
+}
+.image-container div h2 {
+  font-size: 1.4em;
+}
+.image-container div p {
+  font-size: 0.9em;
+  padding-right: 10px;
+}/*# sourceMappingURL=Picture.css.map */

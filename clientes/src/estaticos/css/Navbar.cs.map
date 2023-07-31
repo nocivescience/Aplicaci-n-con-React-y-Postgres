@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EACT,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,KAAK,EAAE,IAAI",
+"sources": ["Navbar.sass"],
+"names": [],
+"file": "Navbar.cs"
+}

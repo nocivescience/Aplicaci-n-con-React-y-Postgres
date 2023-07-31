@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: red;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.pantalla {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 90vh;
+}
+@media (max-width: 1000px) and (min-width: 450px) {
+  .pantalla {
+    display: block;
+  }
+}
+@media (max-width: 450px) {
+  .pantalla {
+    display: block;
+  }
+}
+
+.izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 80%;
+  color: #e7e7e7;
+  box-shadow: 0 0 8px #525252;
+  border-radius: 4px;
+  margin-top: 100px;
+  margin-left: 30px;
+  padding-top: 15px;
+  background-color: rgba(28, 28, 28, 0.5882352941);
+  overflow: hidden;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .izquierda {
+    height: 75%;
+  }
+}
+@media (max-width: 450px) {
+  .izquierda {
+    height: 70%;
+  }
+}
+.izquierda input {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #363636;
+  height: 50px;
+  color: #e7e7e7;
+}
+.izquierda textarea {
+  color: #e7e7e7;
+  background-color: #363636;
+  width: 100%;
+  border-radius: 3px;
+  resize: none;
+  padding: 10px;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .izquierda textarea {
+    width: 160px;
+  }
+}
+@media (max-width: 450px) {
+  .izquierda textarea {
+    width: 100px;
+  }
+}
+@media (max-width: 450px) {
+  .izquierda {
+    padding-top: 20px;
+  }
+}
+.izquierda h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .izquierda h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 450px) {
+  .izquierda h1 {
+    font-size: 1em;
+  }
+}
+.izquierda .form-boton button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #ff1d1d;
+  color: #e7e7e7;
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+}
+.izquierda .form-boton button:active {
+  transform: scale(0.99);
+  background-color: #a70a0a;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .izquierda .form-boton button {
+    width: 160px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .izquierda .form-boton button {
+    width: 100px;
+    font-size: 14px;
+  }
+}
+.izquierda .form-grupo {
+  margin-top: 20px;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .izquierda .form-grupo input {
+    width: 160px;
+  }
+}
+@media (max-width: 450px) {
+  .izquierda .form-grupo input {
+    width: 100px;
+  }
+}
+
+.derecha {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin-top: 70px;
+}
+@media (max-width: 700px) and (min-width: 450px) {
+  .derecha {
+    width: 35%;
+  }
+}
+@media (max-width: 450px) {
+  .derecha {
+    width: 15%;
+  }
+}/*# sourceMappingURL=TaskForm.css.map */

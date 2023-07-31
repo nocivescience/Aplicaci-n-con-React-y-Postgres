@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap')
+$titulo-formulario: 'Poppins', sans-serif
+$maximo: 700px
+$minimo: 450px
+.image-container
+    display: flex
+    margin-top: 30px
+    background-color: #00000097
+    border-radius: 3px 
+    display: flex
+    font-family: $titulo-formulario
+    justify-content: space-between
+    align-items: center
+    color: #fcfcfc
+    height: 130px
+    width: 100%
+    @media (max-width: $maximo) and (min-width: $minimo)
+        flex-direction: column
+        height: 300px
+    @media (max-width: $minimo)
+        flex-direction: column
+        height: 300px
+    img
+        width: 200px
+        height: 130px
+    div
+        padding-left: 20px
+        h2
+            font-size: 1.4em
+        p
+            font-size: .9em
+            padding-right: 10px
